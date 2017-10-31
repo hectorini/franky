@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #STYLES GENERAL
+\*------------------------------------*/
+
+html {
+    height: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    font-size: $base-font-size;
+    font-family: $familyNotoBold;
+    line-height: normal;
+    //background: $colBlanco;
+    color: $base-text-color;
+    overflow: auto\0;
+    a {
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        text-decoration: none;
+        outline: none;
+        line-height: normal;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0;
+}

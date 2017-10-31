@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    #MAIN
+    Habilitar estilos dependiendo el proyecto
+\*------------------------------------*/
+
+@import "settings.global";
+@import "tools.mixins";
+@import "generic.normalize";
+@import "generic.reset";
+//@import "elements.colors";
+@import "elements.headings";
+//@import "elements.forms";
+//@import "objects.bootstrap-grid.min";
+@import "objects.bootstrap.min";
+@import "objects.jquery-ui";
+@import "objects.jquery.fancybox";
+@import "objects.slick";
+//@import "objects.utilities";
+@import "objects.pack";
+//@import "components.forms";
+//@import "trumps.typography";
+//@import "trumps.display";
+@import "trumps.mediaprint";
+@import "trumps.medias";

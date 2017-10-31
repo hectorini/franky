@@ -21,6 +21,10 @@ include_once $helpers->getController($pagina);
         header('X-XSS-Protection: 1; mode=block');
         header('X-Content-Type-Options: nosniff');
       ?>
+      <?php 
+        //GTM-DATALAYERS-FACEBOOK
+        include_once 'includes/analytics.php'; 
+        ?>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,37 +52,49 @@ include_once $helpers->getController($pagina);
         #tags para seo y metas
         include_once 'includes/seo.php';
 
-        #inclusión de js, css y variables javascript a php
-        include 'includes/librerias_js_css.php';
-
         ?>
+
+        <!--Estilos -->
+        <link rel="stylesheet" href="<?php echo $baseURL?>assets/styles/css/main.css">
+
+         <!--Librerias para el header -->
+         <script type="text/javascript" src="<?php echo $baseURL?>assets/js/librerias-header.php"></script>
+
+         <?php 
+        # Scripts por seccion en el footer
+        include_once 'assets/js/scripts-header.php';
+        ?>
+
     </head>
     <body ng-controller="ctrlMain">
-        <?php 
-        //GTM-DATALAYERS-FACEBOOK
-        include_once 'includes/analytics.php'; 
+        
+
+        <?php
+            # Menu
+            include_once 'includes/header_nav.php';
+            # Contenido
+            include_once $helpers->getView($pagina);
+            # Footer
+            include_once 'includes/footer.php';
         ?>
 
-        <div class="contenedor-all">
-            <div class="desplazamiento">
-                  <?php
-                    # Menu
-                    include_once 'includes/header_nav.php';
-                    # Contenido
-                    include_once $helpers->getView($pagina);
-                    # Footer
-                    include_once 'includes/footer.php';
-                ?>
-            </div><!--Fin Contenedor para desplazamiento en MOVIL -->
-        </div>
-
 
         <?php 
-            //Librerias para el footer
+                //Librerias para el footer
             if(isset($libreriasFooter))
                 $helpers->getJs($libreriasFooter,$pagina,$subpagina);
 
+        ?>
 
+        <!--Librerias para el footer -->
+        <script type="text/javascript" src="<?php echo $baseURL?>assets/js/librerias-footer.php"></script>
+        
+        <?php 
+        # Scripts por seccion en el footer
+        include_once 'assets/js/scripts-footer.php';
+        ?>
+
+        <?php
             $time_to_load = microtime();
             $time_to_load = explode(' ', $time_to_load);
             $time_to_load = $time_to_load[1] + $time_to_load[0];

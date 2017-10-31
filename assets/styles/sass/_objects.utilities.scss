@@ -1,0 +1,799 @@
+.botonBlanco {
+    font-family: $familyOpenSemiBold;
+    font-size: 20px;
+    font-size: $font20;
+    font-weight: 600;
+    display: block;
+    background-color: #fff;
+    padding: 11px 0;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    &:hover {
+        background: #222;
+        color: #fff;
+        box-shadow: 0 0 5px #222;
+    }
+}
+
+.botonAzul {
+    display: inline-block;
+    padding: 9px 0px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: $familyOpenSemiBold;
+    font-size: 16px;
+    font-size: $font16;
+    font-weight: 600;
+    color: #fff;
+    background: #0043a3;
+    text-align: center;
+    //box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+    &:hover {
+        background: #fff;
+        color: #0043a3;
+        box-shadow: 0 0 5px #0043a3;
+    }
+}
+
+.img-left {
+    float: left;
+    margin-right: 15px;
+}
+
+.img-right {
+    float: right;
+    margin-left: 15px;
+}
+
+.img-center-full {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.no-movil {
+    display: block;
+}
+
+ul {
+    margin: 0px;
+    padding: 0;
+}
+
+.movil-only {
+    display: none!important;
+}
+
+
+/*AUTOCOMPLETE*/
+
+.ui-autocomplete {
+    max-height: 200px;
+    max-width: 82%;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+
+
+/* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+
+* html .ui-autocomplete {
+    height: 300px;
+    max-width: 82%;
+}
+
+.ui-menu .ui-menu-item {
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.ui-menu .ui-menu-item:last-child {
+    border: none;
+}
+
+.ui-autocomplete a {
+    text-decoration: none;
+}
+
+
+/*AUTOCOMPLETE*/
+
+
+/*PAGINADOR*/
+
+.paginador {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+}
+
+.paginador a.jp-current,
+a.jp-current:hover {
+    background: #848484;
+    color: #fff;
+    font-weight: bold;
+}
+
+.paginador a {
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #000;
+    padding: 3px 8px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.paginador a:hover {
+    background-color: #000;
+    color: #FFF;
+    opacity: 0.5;
+}
+
+.paginador a.jp-previous {
+    margin-right: 15px;
+    border: 1px solid #fff;
+    padding: 6px 29px;
+}
+
+.paginador a.jp-next {
+    margin-left: 15px;
+    border: 1px solid #fff;
+    padding: 3px 8px;
+}
+
+.paginador a.jp-current,
+a.jp-current:hover {
+    color: #fff;
+    background: #000!important;
+}
+
+.paginador a.jp-disabled,
+a.jp-disabled:hover {
+    color: rgba(255, 255, 255, 0.74);
+    display: none;
+}
+
+.paginador a.jp-current,
+a.jp-current:hover,
+.paginador a.jp-disabled,
+a.jp-disabled:hover {
+    cursor: default;
+    background: none;
+}
+
+.paginador span {
+    margin: 0 5px;
+}
+
+a.jp-first,
+a.jp-last {
+    display: none;
+}
+
+
+/*PAGINADOR*/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.txt-center {
+    text-align: center!important;
+}
+
+.txt-left {
+    text-align: left!important;
+}
+
+.txt-right {
+    text-align: right!important;
+}
+
+.txt-justify {
+    text-align: justify!important;
+}
+
+
+/*colores*/
+
+.blanco {
+    color: #fff!important;
+}
+
+.bg-azul {
+    background-color: #0043a3!important;
+}
+
+.azul {
+    color: #0043a3!important;
+}
+
+.negro {
+    color: #000!important;
+}
+
+.bg-blanco {
+    background-color: #fff!important;
+}
+
+.bg-negro {
+    background-color: #000!important;
+}
+
+
+/*posiciones*/
+
+.absolute {
+    position: absolute!important;
+}
+
+.relative {
+    position: relative!important;
+}
+
+.static {
+    position: static!important;
+}
+
+.fixed {
+    position: fixed!important;
+}
+
+.a-right {
+    right: 0!important;
+}
+
+.a-left {
+    left: 0!important;
+}
+
+.a-bottom {
+    bottom: 0!important;
+}
+
+.a-top {
+    top: 0!important;
+}
+
+
+/*flotantes*/
+
+.f-left {
+    float: left!important;
+}
+
+.f-right {
+    float: right!important;
+}
+
+
+/*cases*/
+
+.txt-upper {
+    text-transform: uppercase!important;
+}
+
+.txt-lower {
+    text-transform: lowercase!important;
+}
+
+.txt-capitalize {
+    text-transform: capitalize!important;
+}
+
+
+/*bloques*/
+
+.block {
+    display: block!important;
+}
+
+.inline {
+    display: inline!important;
+}
+
+.inline-block {
+    display: inline-block!important;
+}
+
+
+/*COMPORTAMIENTO TIPO TABLA*/
+
+.table-box {
+    height: 100%;
+    width: 100%;
+    display: table!important;
+}
+
+.table-box._50 {
+    height: 60%;
+}
+
+.table-box .table-cell {
+    display: table-cell;
+    position: relative;
+}
+
+.table-box .table-cell.middle {
+    vertical-align: middle;
+}
+
+.table-box .table-cell.bottom {
+    vertical-align: bottom;
+}
+
+.table-box .table-cell.top {
+    vertical-align: top;
+}
+
+.contenedor-info {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    overflow: hidden;
+    padding: 3%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*RATIOS*/
+
+.ratio-height {
+    width: 100%;
+    position: relative;
+}
+
+
+/*Ratios Utilizados*/
+
+.ratio-height._170 {
+    padding-bottom: 170%;
+}
+
+.ratio-height._160_7 {
+    padding-bottom: 160.7%;
+}
+
+.ratio-height._150 {
+    padding-bottom: 150%;
+}
+
+.ratio-height._130 {
+    padding-bottom: 130%;
+}
+
+.ratio-height._118_8 {
+    padding-bottom: 118.8%;
+}
+
+.ratio-height._117 {
+    padding-bottom: 117%;
+}
+
+.ratio-height._114 {
+    padding-bottom: 114%;
+}
+
+.ratio-height._113_7 {
+    padding-bottom: 113.7%;
+}
+
+.ratio-height._111_7 {
+    padding-bottom: 111.7%;
+}
+
+.ratio-height._104_5 {
+    padding-bottom: 104.5%;
+}
+
+.ratio-height._104 {
+    padding-bottom: 104%;
+}
+
+.ratio-height._110_6 {
+    padding-bottom: 110.6%;
+}
+
+.ratio-height._110 {
+    padding-bottom: 110%;
+}
+
+.ratio-height._100 {
+    padding-bottom: 100%;
+}
+
+.ratio-height._90 {
+    padding-bottom: 90%;
+}
+
+.ratio-height._89 {
+    padding-bottom: 89%;
+}
+
+.ratio-height._88_5 {
+    padding-bottom: 88.5%;
+}
+
+.ratio-height._88_4 {
+    padding-bottom: 88.4%;
+}
+
+.ratio-height._80 {
+    padding-bottom: 80%;
+}
+
+.ratio-height._73 {
+    padding-bottom: 73%;
+}
+
+.ratio-height._70 {
+    padding-bottom: 70%;
+}
+
+.ratio-height._60 {
+    padding-bottom: 60%;
+}
+
+.ratio-height._53 {
+    padding-bottom: 53%;
+}
+
+.ratio-height._51_9 {
+    padding-bottom: 51.9%;
+}
+
+.ratio-height._50 {
+    padding-bottom: 50%;
+}
+
+.ratio-height._39 {
+    padding-bottom: 39%;
+}
+
+.ratio-height._38_2 {
+    padding-bottom: 38.2%;
+}
+
+.ratio-height._38 {
+    padding-bottom: 38%;
+}
+
+.ratio-height._35 {
+    padding-bottom: 35%;
+}
+
+.ratio-height._30 {
+    padding-bottom: 30%;
+}
+
+.ratio-height._25_5 {
+    padding-bottom: 25.5%;
+}
+
+.ratio-height._25 {
+    padding-bottom: 25%;
+}
+
+.ratio-height._20 {
+    padding-bottom: 20%;
+}
+
+.ratio-height._10 {
+    padding-bottom: 10%;
+}
+
+.ratio-height._00 {
+    padding-bottom: 00%;
+}
+
+.cont-ratio {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cont-ratio:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+
+/*COMPORTAMIENTO ELIPSIS*/
+
+.elipsis {
+    display: -webkit-box!important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+
+.elipsis._2 {
+    -webkit-line-clamp: 2!important;
+}
+
+.elipsis._3 {
+    -webkit-line-clamp: 3!important;
+}
+
+.elipsis._4 {
+    -webkit-line-clamp: 4!important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:not(.fact-cobrada) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input,
+select,
+textarea {
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    color: #222;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    width: 100%;
+    color: #999999;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: rgba(255, 0, 0, 0)!important;
+    color: #222!important;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #bcbbbb;
+    background: none;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #bcbbbb!important;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+/* All the default sidebar styles */
+
+.navbar-toggle {
+    padding: 12px 10px;
+}
+
+.navbar-toggle .icon-bar {
+    background: #5f5f61;
+}
+
+.navbar.navbar-static .navbar-header {
+    float: left;
+}
+
+.navbar .navbar-toggle.toggle-left {
+    float: left;
+    margin-left: 15px;
+}
+
+.navbar .navbar-toggle.toggle-right {
+    float: right;
+    margin-right: 15px;
+}
+
+.navbar .navbar-toggle.toggle-sidebar,
+[data-toggle="sidebar"] {
+    display: none;
+}
+
+
+/* sidebar settings */
+
+.sidebar {
+    position: fixed;
+    display: block;
+    top: 56px;
+    bottom: 0;
+    z-index: 1000;
+    min-height: 100%;
+    max-height: none;
+    overflow: auto;
+    padding: 0;
+    background-color: #fff;
+    border-left: 1px solid #eee;
+    box-shadow: 0 5px 5px #000;
+}
+
+.sidebar-left {
+    left: 0;
+}
+
+.sidebar-right {
+    right: 0;
+}
+
+
+/* css to override hiding the sidebar according to different screen sizes */
+
+.row .sidebar.sidebar-left.sidebar-xs-show {
+    left: 0;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+
+/*right sidebar is untested */
+
+.row .sidebar.sidebar-right.sidebar-xs-show {
+    right: 0;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+@media (min-width: 768px) {
+    .row .sidebar.sidebar-left.sidebar-sm-show {
+        left: 0;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    /*right sidebar is untested */
+    .row .sidebar.sidebar-right.sidebar-sm-show {
+        right: 0;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@media (min-width: 992px) {
+    .row .sidebar.sidebar-left.sidebar-md-show {
+        left: 0;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .row .sidebar.sidebar-right.sidebar-md-show {
+        right: 0;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@media (min-width: 1170px) {
+    .row .sidebar.sidebar-left.sidebar-lg-show {
+        left: 0;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .row .sidebar.sidebar-right.sidebar-lg-show {
+        right: 0;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+
+/* animation class - optional: without it the sidebar would just pop in and out*/
+
+.sidebar-animate {
+    -webkit-transition: -webkit-transform 300ms ease;
+    -moz-transition: -moz-transform 300ms ease;
+    -o-transition: transform 300ms ease;
+    transition: transform 300ms ease;
+}
+
+
+/* Left panel positioning classes */
+
+.sidebar.sidebar-left {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+
+.sidebar.sidebar-left.sidebar-open {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.sidebar.sidebar-right {
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+}
+
+.sidebar.sidebar-right.sidebar-open {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}

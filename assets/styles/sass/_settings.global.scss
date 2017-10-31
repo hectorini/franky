@@ -1,0 +1,19 @@
+///*----------------------------------*\
+//  #GLOBAL
+//\*----------------------------------*/
+@font-face {
+    font-family: 'NotoSans-Bold';
+    src: url('../../fonts/original_NotoSans-Bold.eot?#iefix') format('embedded-opentype'), url('../../fonts/original_NotoSans-Bold.woff') format('woff'), url('../../fonts/original_NotoSans-Bold.ttf') format('truetype'), url('../../fonts/original_NotoSans-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// High-level base settings.
+$base-font-size: 16px !default;
+$base-line-height: 24px !default;
+$base-text-color: #333 !default;
+$base-background-color: #fff !default;
+$base-fr-color: #005639 !default;
+$base-fr-color-border: #002317 !default;
+$familyNotoBold: "NotoSans-Bold",
+sans-serif;
