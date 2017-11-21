@@ -2,9 +2,8 @@
 $list_of_files = array(
     'librerias/vendor/bootstrap.min.js',
     'librerias/vendor/jquery-ui.min.js',
-    'librerias/fancybox/jquery.fancybox.js',
+    'librerias/jquery.fancybox.js',
     'librerias/jquery.validate.js',
-    'librerias/sidebar.js',
     'librerias/slick.min.js'
 );
 
